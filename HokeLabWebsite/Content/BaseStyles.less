@@ -20,8 +20,8 @@
 @color-scheme-1: #565C5A;
 @color-scheme-2: #FFFFFF;
 @color-scheme-3: #8ECBFF;
-@color-scheme-4: #64E52C;
-@color-scheme-5: #FEFF4B;
+@color-scheme-4: saturate(#64E52C, -10%);
+@color-scheme-5: lighten(desaturate(spin(#FEFF4B, -5%), 5%), 5%);
 
 @color-scheme-main: @color-scheme-4;
 @color-scheme-accent-cool: @color-scheme-3;
@@ -35,11 +35,6 @@
 
 //
 // Fonts
-//
-
-// Fonts I liked:
-//      http://www.google.com/fonts/
-//      Mondo, Quando, Asap, Imprima, Fredoka One, Righteous, Donegal One, Raleway, Lora
 //
 
 //@logo-font-family: 'Righteous', cursive;
@@ -452,6 +447,8 @@ body
 
 #labMembersPictureSection
 {
+    background-color: @color-scheme-accent-warm;
+
     .heading
     {
         text-align:center;
@@ -460,24 +457,41 @@ body
     }
 }
 
-.labMemberBioBoxSection
+#labMemberBioList
 {
     .boxSection;
 
     background-color: @color-scheme-accent-cool-lighter;
     color: @color-scheme-gray;
+}
 
-    border-bottom: 2px solid @color-scheme-accent-warm;
+.labMemberBioBoxSection
+{
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-bottom: 35px;
+    border: 1px solid @color-scheme-accent-cool;
+    background-color: @color-scheme-white;
 
     &:last-of-type
     {
-        border-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .bio
+    {
+        padding: 10px 20px 10px 0;
+
+        @media @mediaQueryResponsivePhonesOnly
+        {
+            padding-left: 20px;
+        }
     }
 }
 
 #researchOverviewSection
 {
-    background-color: @color-scheme-white-darker;
+    background-color: @color-scheme-accent-cool-lighter;
 }
 
 #projectsHeaderSection
@@ -496,4 +510,11 @@ body
     {
         border-bottom: 0;
     }
+}
+
+.citation
+{
+    //line-height: 150%;
+    margin-left: .25in;
+    text-indent: -.25in;
 }

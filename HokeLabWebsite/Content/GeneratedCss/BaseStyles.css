@@ -49,12 +49,12 @@ body {
   margin: 18px 80px 18px -20px;
   font-size: 48px;
   line-height: 48px;
-  color: #64e52c;
+  color: #69d938;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 #mainHeader .navbar .brand:hover {
   text-decoration: none;
-  color: #64e52c;
+  color: #69d938;
 }
 @media (min-width: 1200px) {
   #mainHeader .navbar .brand {
@@ -128,7 +128,7 @@ body {
   color: #252726;
 }
 #mainHeader .nav > li.active > a {
-  border-color: #64e52c;
+  border-color: #69d938;
   font-weight: bold;
 }
 @media (min-width: 650px) {
@@ -288,7 +288,7 @@ body {
 .boxSectionLead {
   background-color: white;
   color: #565c5a;
-  background-color: #64e52c;
+  background-color: #69d938;
   color: white;
 }
 @media (max-width: 767px) {
@@ -337,68 +337,85 @@ body {
     padding-bottom: 35px;
   }
 }
+#labMembersPictureSection {
+  background-color: #fbf068;
+}
 #labMembersPictureSection .heading {
   text-align: center;
   color: white;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
-.labMemberBioBoxSection {
+#labMemberBioList {
   background-color: white;
   color: #565c5a;
   background-color: #e5f3ff;
-  border-bottom: 2px solid #feff4b;
 }
 @media (max-width: 767px) {
-  .labMemberBioBoxSection {
+  #labMemberBioList {
     margin-left: -20px;
     margin-right: -20px;
     padding-left: 20px;
     padding-right: 20px;
   }
 }
-.labMemberBioBoxSection h1:first-child,
-.labMemberBioBoxSection h2:first-child,
-.labMemberBioBoxSection h3:first-child,
-.labMemberBioBoxSection h4:first-child,
-.labMemberBioBoxSection h5:first-child {
+#labMemberBioList h1:first-child,
+#labMemberBioList h2:first-child,
+#labMemberBioList h3:first-child,
+#labMemberBioList h4:first-child,
+#labMemberBioList h5:first-child {
   margin-top: 0;
 }
-.labMemberBioBoxSection h1:last-child,
-.labMemberBioBoxSection h2:last-child,
-.labMemberBioBoxSection h3:last-child,
-.labMemberBioBoxSection h4:last-child,
-.labMemberBioBoxSection h5:last-child {
+#labMemberBioList h1:last-child,
+#labMemberBioList h2:last-child,
+#labMemberBioList h3:last-child,
+#labMemberBioList h4:last-child,
+#labMemberBioList h5:last-child {
   margin-bottom: 0;
 }
 @media (min-width: 1200px) {
-  .labMemberBioBoxSection {
+  #labMemberBioList {
     padding-top: 85px;
     padding-bottom: 85px;
   }
 }
 @media (min-width: 980px) and (max-width: 1199px) {
-  .labMemberBioBoxSection {
+  #labMemberBioList {
     padding-top: 65px;
     padding-bottom: 65px;
   }
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  .labMemberBioBoxSection {
+  #labMemberBioList {
     padding-top: 50px;
     padding-bottom: 50px;
   }
 }
 @media (max-width: 767px) {
-  .labMemberBioBoxSection {
+  #labMemberBioList {
     padding-top: 35px;
     padding-bottom: 35px;
   }
 }
+.labMemberBioBoxSection {
+  margin-left: -1px;
+  margin-right: -1px;
+  margin-bottom: 35px;
+  border: 1px solid #8ecbff;
+  background-color: white;
+}
 .labMemberBioBoxSection:last-of-type {
-  border-bottom: 0;
+  margin-bottom: 0;
+}
+.labMemberBioBoxSection .bio {
+  padding: 10px 20px 10px 0;
+}
+@media (max-width: 767px) {
+  .labMemberBioBoxSection .bio {
+    padding-left: 20px;
+  }
 }
 #researchOverviewSection {
-  background-color: #e6e6e6;
+  background-color: #e5f3ff;
 }
 #projectsHeaderSection {
   padding-top: 30px;
@@ -457,4 +474,8 @@ body {
 }
 .projectSection:last-of-type {
   border-bottom: 0;
+}
+.citation {
+  margin-left: .25in;
+  text-indent: -0.25in;
 }
