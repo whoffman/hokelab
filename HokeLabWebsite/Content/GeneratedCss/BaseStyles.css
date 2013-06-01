@@ -49,12 +49,11 @@ body {
   margin: 18px 80px 18px -20px;
   font-size: 48px;
   line-height: 48px;
-  color: #69d938;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  color: #51bb23;
 }
 #mainHeader .navbar .brand:hover {
   text-decoration: none;
-  color: #69d938;
+  color: #51bb23;
 }
 @media (min-width: 1200px) {
   #mainHeader .navbar .brand {
@@ -128,7 +127,7 @@ body {
   color: #252726;
 }
 #mainHeader .nav > li.active > a {
-  border-color: #69d938;
+  border-color: #51bb23;
   font-weight: bold;
 }
 @media (min-width: 650px) {
@@ -288,7 +287,7 @@ body {
 .boxSectionLead {
   background-color: white;
   color: #565c5a;
-  background-color: #69d938;
+  background-color: #51bb23;
   color: white;
 }
 @media (max-width: 767px) {
