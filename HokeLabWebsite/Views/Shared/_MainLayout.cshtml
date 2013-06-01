@@ -1,0 +1,149 @@
+﻿@{
+    ViewBag.InfoPageNavItems = new List<object>()
+    {
+        new
+        {
+            Id = "homeNavButton",
+            Title = "Home",
+            Href = Url.Action("Home")
+        },
+        new
+        {
+            Id = "peopleNavButton",
+            Title = "People",
+            Href = Url.Action("People")
+        },
+        new
+        {
+            Id = "researchNavButton",
+            Title = "Research",
+            Href = Url.Action("Research")
+        },
+        new
+        {
+            Id = "teachingNavButton",
+            Title = "Teaching",
+            Href = Url.Action("Teaching")
+        },
+        new
+        {
+            Id = "publicationsNavButton",
+            Title = "Publications",
+            Href = Url.Action("Publications")
+        },
+    };
+}
+@* ===================================================================================================== *@
+
+@helper RenderNavItem(string id, string title, string href, bool isActive)
+{
+    <li class="@(isActive ? "active" : null)">
+        <a id="@id" href="@href">@title</a>
+    </li>
+}
+
+@* ===================================================================================================== *@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Hoke Lab</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="shortcut icon" href="~/Content/images/favicon.ico">
+    @Styles.Render("~/Content/bootstrap-css")
+    @Styles.Render("~/Content/core-css")
+    @RenderSection("styles", required: false)
+</head>
+<body>
+
+    @* ===================================================================================================== *@
+
+    <div id="mainHeader">
+        <div class="navbar navbar-header navbar-fixed-top">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a href="~/Main/Home" class="brand">Hoke Lab</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        @foreach (var navItem in ViewBag.InfoPageNavItems)
+                        {
+                            @RenderNavItem(
+                                navItem.Id,
+                                navItem.Title,
+                                navItem.Href,
+                                ViewBag.ActiveNav == navItem.Id);
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* ===================================================================================================== *@
+
+    @RenderBody()
+
+    @* ===================================================================================================== *@
+
+    <div id="mainFooter">
+        <div class="container">
+            <div class="row">
+                <div class="span7">
+                    <div id="footerNav">
+                        <a href="~/Main/Home" class="brand">Hoke Lab</a>
+                    </div>
+                </div>
+                <div class="span5">
+                    <div id="footerContact">
+                        <h3>Contact</h3>
+                        <strong>Email</strong>
+                        <a href="mailto:someone@somewhere.com">someone@somewhere.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* ===================================================================================================== *@
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <script type="text/javascript">
+        $(document).ready(function ()
+        {
+            function ShrinkNav()
+            {
+                $(".navbar-fixed-top").addClass("shrunken");
+            }
+
+            function UnshrinkNav()
+            {
+                $(".navbar-fixed-top").removeClass("shrunken");
+            }
+
+            function OnScroll()
+            {
+                if ($(window).scrollTop() > parseInt($("body").css("padding-top"), 10))
+                {
+                    ShrinkNav();
+                }
+                else
+                {
+                    UnshrinkNav();
+                }
+            }
+
+            $(window).scroll(OnScroll);
+            OnScroll();
+        });
+    </script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

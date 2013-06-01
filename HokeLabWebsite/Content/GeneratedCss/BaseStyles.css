@@ -1,0 +1,460 @@
+@media (max-width: 767px) {
+  .boxExtended {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+body {
+  padding-top: 125px;
+}
+@media (max-width: 649px) {
+  body {
+    padding-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  #mainHeader .navbar-static-top,
+  #mainHeader .navbar-fixed-top,
+  #mainHeader .navbar-fixed-bottom {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media (max-width: 649px) {
+  #mainHeader .navbar-static-top,
+  #mainHeader .navbar-fixed-top,
+  #mainHeader .navbar-fixed-bottom {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+}
+@media (max-width: 767px) {
+  #mainHeader .navbar-static-top .container,
+  #mainHeader .navbar-fixed-top .container,
+  #mainHeader .navbar-fixed-bottom .container {
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+#mainHeader .navbar {
+  background-color: white;
+  margin-bottom: 0;
+}
+#mainHeader .navbar .brand {
+  display: block;
+  padding: 20px;
+  margin: 18px 80px 18px -20px;
+  font-size: 48px;
+  line-height: 48px;
+  color: #64e52c;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+#mainHeader .navbar .brand:hover {
+  text-decoration: none;
+  color: #64e52c;
+}
+@media (min-width: 1200px) {
+  #mainHeader .navbar .brand {
+    font-size: 48px;
+    margin-right: 50px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  #mainHeader .navbar .brand {
+    font-size: 48px;
+    margin-right: 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  #mainHeader .navbar .brand {
+    font-size: 36px;
+    margin-right: 30px;
+  }
+}
+@media (max-width: 767px) {
+  #mainHeader .navbar .brand {
+    font-size: 34px;
+    margin-left: 0;
+    margin-right: 15px;
+  }
+}
+@media (max-width: 649px) {
+  #mainHeader .navbar .brand {
+    margin: 0;
+    padding: 15px;
+    font-size: 34px;
+    line-height: 34px;
+  }
+}
+#mainHeader .navbar .btn-navbar {
+  margin: 20px 0;
+  border: 0;
+  padding: 0 20px 0 10px;
+  background: none;
+}
+#mainHeader .navbar .btn-navbar .icon-bar {
+  background-color: #88908d;
+  border-radius: 4px;
+  box-shadow: none;
+  height: 4px;
+  width: 30px;
+  margin-bottom: 5px;
+}
+#mainHeader .navbar .btn-navbar .icon-bar + .icon-bar {
+  margin-top: 3px;
+}
+#mainHeader .navbar-header {
+  border-bottom: 1px solid #e6e6e6;
+}
+#mainHeader .nav {
+  margin-right: 0;
+}
+#mainHeader .nav > li > a {
+  font-weight: normal;
+  text-shadow: none;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border-color: white;
+  border-radius: 0;
+  border-style: solid;
+  border-width: 0;
+  background-color: transparent;
+  color: #88908d;
+}
+#mainHeader .nav > li > a:hover {
+  color: #252726;
+}
+#mainHeader .nav > li.active > a {
+  border-color: #64e52c;
+  font-weight: bold;
+}
+@media (min-width: 650px) {
+  #mainHeader .nav > li {
+    padding: 0 32px;
+  }
+  #mainHeader .nav > li > a {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 45px 7px 45px 7px;
+    border-top-width: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  #mainHeader .nav > li {
+    padding: 0 16px;
+  }
+  #mainHeader .nav > li > a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  #mainHeader .nav > li {
+    padding: 0 10px;
+  }
+  #mainHeader .nav > li > a {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 767px) {
+  #mainHeader .nav > li {
+    padding: 0 10px;
+  }
+  #mainHeader .nav > li > a {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 649px) {
+  #mainHeader .nav {
+    border-top: 1px solid #e6e6e6;
+  }
+  #mainHeader .nav > li {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+  #mainHeader .nav > li > a {
+    padding: 16px 10px;
+    border-left-width: 10px;
+  }
+}
+@media (min-width: 650px) {
+  #mainHeader .navbar-fixed-top.shrunken .brand {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 650px) {
+  #mainHeader .navbar-fixed-top.shrunken .nav > li > a {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+#mainFooter {
+  padding: 40px 0 70px;
+  background-color: #e6e6e6;
+}
+@media (max-width: 767px) {
+  #mainFooter {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+#mainFooter .brand {
+  color: #565c5a;
+  padding: 20px;
+  margin: 40px 80px 40px -20px;
+  font-size: 36px;
+  line-height: 36px;
+}
+#mainFooter .brand:hover {
+  text-decoration: none;
+  color: white;
+}
+#mainFooter #footerContact {
+  padding-left: 10%;
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  color: #565c5a;
+}
+@media (max-width: 767px) {
+  #mainFooter #footerContact {
+    padding-left: 0;
+    border-left: 0;
+  }
+}
+.boxSection {
+  background-color: white;
+  color: #565c5a;
+}
+@media (max-width: 767px) {
+  .boxSection {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.boxSection h1:first-child,
+.boxSection h2:first-child,
+.boxSection h3:first-child,
+.boxSection h4:first-child,
+.boxSection h5:first-child {
+  margin-top: 0;
+}
+.boxSection h1:last-child,
+.boxSection h2:last-child,
+.boxSection h3:last-child,
+.boxSection h4:last-child,
+.boxSection h5:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .boxSection {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .boxSection {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .boxSection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .boxSection {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+.boxSectionLead {
+  background-color: white;
+  color: #565c5a;
+  background-color: #64e52c;
+  color: white;
+}
+@media (max-width: 767px) {
+  .boxSectionLead {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.boxSectionLead h1:first-child,
+.boxSectionLead h2:first-child,
+.boxSectionLead h3:first-child,
+.boxSectionLead h4:first-child,
+.boxSectionLead h5:first-child {
+  margin-top: 0;
+}
+.boxSectionLead h1:last-child,
+.boxSectionLead h2:last-child,
+.boxSectionLead h3:last-child,
+.boxSectionLead h4:last-child,
+.boxSectionLead h5:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .boxSectionLead {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .boxSectionLead {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .boxSectionLead {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .boxSectionLead {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+#labMembersPictureSection .heading {
+  text-align: center;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.labMemberBioBoxSection {
+  background-color: white;
+  color: #565c5a;
+  background-color: #e5f3ff;
+  border-bottom: 2px solid #feff4b;
+}
+@media (max-width: 767px) {
+  .labMemberBioBoxSection {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.labMemberBioBoxSection h1:first-child,
+.labMemberBioBoxSection h2:first-child,
+.labMemberBioBoxSection h3:first-child,
+.labMemberBioBoxSection h4:first-child,
+.labMemberBioBoxSection h5:first-child {
+  margin-top: 0;
+}
+.labMemberBioBoxSection h1:last-child,
+.labMemberBioBoxSection h2:last-child,
+.labMemberBioBoxSection h3:last-child,
+.labMemberBioBoxSection h4:last-child,
+.labMemberBioBoxSection h5:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .labMemberBioBoxSection {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .labMemberBioBoxSection {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .labMemberBioBoxSection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .labMemberBioBoxSection {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+.labMemberBioBoxSection:last-of-type {
+  border-bottom: 0;
+}
+#researchOverviewSection {
+  background-color: #e6e6e6;
+}
+#projectsHeaderSection {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.projectSection {
+  background-color: white;
+  color: #565c5a;
+  border-bottom: 2px solid #8ecbff;
+}
+@media (max-width: 767px) {
+  .projectSection {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.projectSection h1:first-child,
+.projectSection h2:first-child,
+.projectSection h3:first-child,
+.projectSection h4:first-child,
+.projectSection h5:first-child {
+  margin-top: 0;
+}
+.projectSection h1:last-child,
+.projectSection h2:last-child,
+.projectSection h3:last-child,
+.projectSection h4:last-child,
+.projectSection h5:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .projectSection {
+    padding-top: 85px;
+    padding-bottom: 85px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  .projectSection {
+    padding-top: 65px;
+    padding-bottom: 65px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  .projectSection {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (max-width: 767px) {
+  .projectSection {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+.projectSection:last-of-type {
+  border-bottom: 0;
+}

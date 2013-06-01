@@ -1,0 +1,499 @@
+﻿//
+// BaseStyles
+//
+
+// ===============================================================================================================
+
+// font-family: 'Righteous', cursive;
+//@import url(http://fonts.googleapis.com/css?family=Righteous);
+// font-family: 'Raleway', sans-serif;
+//@import url(http://fonts.googleapis.com/css?family=Raleway);
+// font-family: 'Lora', serif;
+//@import url(http://fonts.googleapis.com/css?family=Lora);
+
+// ===============================================================================================================
+
+//
+// Color Schemes
+//
+
+@color-scheme-1: #565C5A;
+@color-scheme-2: #FFFFFF;
+@color-scheme-3: #8ECBFF;
+@color-scheme-4: #64E52C;
+@color-scheme-5: #FEFF4B;
+
+@color-scheme-main: @color-scheme-4;
+@color-scheme-accent-cool: @color-scheme-3;
+@color-scheme-accent-cool-lighter: lighten(@color-scheme-accent-cool, 17%);
+@color-scheme-accent-warm: @color-scheme-5;
+@color-scheme-white: @color-scheme-2;
+@color-scheme-white-darker: darken(@color-scheme-white, 10%);
+@color-scheme-gray: @color-scheme-1;
+@color-scheme-gray-lighter: lighten(@color-scheme-gray, 20%);
+@color-scheme-gray-darker: darken(@color-scheme-gray, 20%);
+
+//
+// Fonts
+//
+
+// Fonts I liked:
+//      http://www.google.com/fonts/
+//      Mondo, Quando, Asap, Imprima, Fredoka One, Righteous, Donegal One, Raleway, Lora
+//
+
+//@logo-font-family: 'Righteous', cursive;
+//@major-heading-font-family:  'Raleway', sans-serif;
+//@normal-text-font-family: 'Lora', serif;
+
+//
+// Media Queries
+//
+
+@mediaQueryResponsivePhonesOnly: ~"(max-width: 767px)";
+@mediaQueryResponsiveLandscapeTabletAndSmallDesktop: ~"(min-width: 768px) and (max-width: 979px)";
+@mediaQueryResponsiveNormalDesktop: ~"(min-width: 980px) and (max-width: 1199px)";
+@mediaQueryResponsiveLargeDesktopAndUp: ~"(min-width: 1200px)";
+
+@mediaQueryNavBarCollapsed: ~"(max-width: 649px)";
+@mediaQueryNavBarExpanded: ~"(min-width: 650px)";
+
+// ===============================================================================================================
+
+//
+// Basics
+//
+
+body
+{
+}
+
+h1, h2, h3, h4, h5
+{
+}
+
+.brand
+{
+    //font-family: @logo-font-family;
+}
+
+// ===============================================================================================================
+
+//
+// Scaffolding
+//
+
+.boxExtended
+{
+    @media @mediaQueryResponsivePhonesOnly
+    {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+// ===============================================================================================================
+
+//
+// Common layout sections
+//
+
+body
+{
+    padding-top: 125px;
+
+    @media @mediaQueryNavBarCollapsed
+    {
+        padding-top: 0;
+    }
+}
+
+#mainHeader
+{
+    .navbar-static-top, .navbar-fixed-top, .navbar-fixed-bottom
+    {
+        @media @mediaQueryResponsivePhonesOnly
+        {
+            margin-left: 0; margin-right: 0;
+        }
+
+        @media @mediaQueryNavBarCollapsed
+        {
+            margin-left: -20px; margin-right: -20px;
+        }
+
+        .container
+        {
+            @media @mediaQueryResponsivePhonesOnly
+            {
+                width: auto; padding-left: 0; padding-right: 0;
+            }
+        }
+    }
+
+    .navbar
+    {
+        background-color: @color-scheme-white;
+        margin-bottom: 0;
+
+        .brand
+        {
+            display: block;
+            padding: 20px;
+            margin: 18px 80px 18px -20px;
+            font-size: 48px;
+            line-height: 48px;
+            color: @color-scheme-main;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.50);
+
+            &:hover
+            {
+                text-decoration: none;
+                color: @color-scheme-main;
+            }
+
+            @media @mediaQueryResponsiveLargeDesktopAndUp
+            {
+                font-size: 48px;
+                margin-right: 50px;
+            }
+
+            @media @mediaQueryResponsiveNormalDesktop
+            {
+                font-size: 48px;
+                margin-right: 40px;
+            }
+
+            @media @mediaQueryResponsiveLandscapeTabletAndSmallDesktop
+            {
+                font-size: 36px;
+                margin-right: 30px;
+            }
+
+            @media @mediaQueryResponsivePhonesOnly
+            {
+                font-size: 34px;
+                margin-left: 0; margin-right: 15px;
+            }
+
+            @media @mediaQueryNavBarCollapsed
+            {
+                margin:0; padding: 15px; font-size: 34px; line-height: 34px;
+            }
+        }
+
+        .btn-navbar
+        {
+            margin: 20px 0;
+            border: 0;
+            padding: 0 20px 0 10px;
+            background: none;
+
+            .icon-bar
+            {
+                background-color: @color-scheme-gray-lighter;
+                border-radius: 4px;
+                box-shadow: none;
+                height: 4px;
+                width: 30px;
+                margin-bottom: 5px;
+            }
+
+                .icon-bar + .icon-bar
+                {
+                    margin-top: 3px;
+                }
+        }
+    }
+
+    .navbar-header
+    {
+        border-bottom: 1px solid @color-scheme-white-darker;
+    }
+
+    .navbar-fixed-top
+    {
+    }
+
+    .nav
+    {
+        margin-right:0;
+
+        > li
+        {
+            > a
+            {
+                //font-family: @major-heading-font-family;
+                font-weight: normal;
+                text-shadow: none;
+                box-shadow: none;
+                -webkit-box-shadow: none;
+                border-color: @color-scheme-white;
+                border-radius: 0;
+                border-style: solid;
+                border-width: 0;
+                background-color: transparent;
+                color: @color-scheme-gray-lighter;
+
+                &:hover
+                {
+                    color: @color-scheme-gray-darker;
+                }
+            }
+
+            &.active > a
+            {
+                border-color: @color-scheme-main;
+                font-weight: bold;
+            }
+        }
+
+        @media @mediaQueryNavBarExpanded
+        {
+            > li
+            {
+                padding: 0 32px;
+
+                > a
+                {
+                    display: block;
+                    font-size: 20px;
+                    line-height: 20px;
+                    padding: 45px 7px 45px 7px;
+                    border-top-width: 10px;
+                }
+            }
+        }
+
+        @media @mediaQueryResponsiveLargeDesktopAndUp
+        {
+        }
+
+        @media @mediaQueryResponsiveNormalDesktop
+        {
+            > li
+            {
+                padding: 0 16px;
+
+                > a
+                {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        @media @mediaQueryResponsiveLandscapeTabletAndSmallDesktop
+        {
+            > li
+            {
+                padding: 0 10px;
+
+                > a
+                {
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        @media @mediaQueryResponsivePhonesOnly
+        {
+            > li
+            {
+                padding: 0 10px;
+
+                > a
+                {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+
+        @media @mediaQueryNavBarCollapsed
+        {
+            border-top: 1px solid @color-scheme-white-darker;
+                
+            > li
+            {
+                margin: 0;
+                padding: 0;
+                border-radius: 0;
+
+                > a
+                {
+                    padding: 16px 10px;
+                    border-left-width: 10px;
+                }
+            }
+        }
+    }
+
+    .navbar-fixed-top.shrunken
+    {
+        .brand
+        {
+            @media @mediaQueryNavBarExpanded
+            {
+                margin-top: 0; margin-bottom: 0; padding-top: 20px; padding-bottom: 20px;
+            }
+        }
+
+        .nav
+        {
+            @media @mediaQueryNavBarExpanded
+            {
+                > li
+                {
+                    > a
+                    {
+                        padding-top: 25px;
+                        padding-bottom: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#mainFooter
+{
+    .boxExtended;
+    padding: 40px 0 70px;
+    background-color: @color-scheme-white-darker;
+
+    .brand
+    {
+        color: @color-scheme-gray;
+        padding: 20px;
+        margin: 40px 80px 40px -20px;
+        font-size: 36px;
+        line-height: 36px;
+
+        &:hover
+        {
+            text-decoration: none;
+            color: @color-scheme-white;
+        }
+    }
+
+    #footerNav
+    {
+    }
+
+    #footerContact
+    {
+        padding-left: 10%;
+        border-left: 1px solid rgba(0,0,0,0.15);
+
+        color: @color-scheme-gray;
+
+        @media @mediaQueryResponsivePhonesOnly
+        {
+            padding-left:0;
+            border-left:0;
+        }
+    }
+}
+
+.boxSection
+{
+    .boxExtended;
+
+    h1, h2, h3, h4, h5
+    {
+        &:first-child
+        {
+            margin-top: 0;
+        }
+
+        &:last-child
+        {
+            margin-bottom: 0;
+        }
+    }
+
+    background-color: @color-scheme-white;
+    color: @color-scheme-gray;
+
+    @media @mediaQueryResponsiveLargeDesktopAndUp
+    {
+        padding-top: 85px; padding-bottom: 85px;
+    }
+
+    @media @mediaQueryResponsiveNormalDesktop
+    {
+        padding-top: 65px; padding-bottom: 65px;
+    }
+
+    @media @mediaQueryResponsiveLandscapeTabletAndSmallDesktop
+    {
+        padding-top: 50px; padding-bottom: 50px;
+    }
+
+    @media @mediaQueryResponsivePhonesOnly
+    {
+        padding-top: 35px; padding-bottom: 35px;
+    }
+}
+
+.boxSectionLead
+{
+    .boxSection;
+
+    background-color: @color-scheme-main;
+    color: @color-scheme-white;
+}
+
+// ===============================================================================================================
+
+#labMembersPictureSection
+{
+    .heading
+    {
+        text-align:center;
+        color: @color-scheme-white;
+        text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    }
+}
+
+.labMemberBioBoxSection
+{
+    .boxSection;
+
+    background-color: @color-scheme-accent-cool-lighter;
+    color: @color-scheme-gray;
+
+    border-bottom: 2px solid @color-scheme-accent-warm;
+
+    &:last-of-type
+    {
+        border-bottom: 0;
+    }
+}
+
+#researchOverviewSection
+{
+    background-color: @color-scheme-white-darker;
+}
+
+#projectsHeaderSection
+{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.projectSection
+{
+    .boxSection;
+    
+    border-bottom: 2px solid @color-scheme-accent-cool;
+
+    &:last-of-type
+    {
+        border-bottom: 0;
+    }
+}
