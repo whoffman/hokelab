@@ -141,6 +141,8 @@
     <Content Include="Content\images\glyphicons-halflings.png" />
     <Content Include="Global.asax" />
     <Content Include="Content\BaseStyles.less" />
+    <None Include="Properties\PublishProfiles\hokelab - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\hokelab - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-2.0.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

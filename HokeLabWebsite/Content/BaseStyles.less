@@ -141,6 +141,7 @@ body
             margin: 18px 80px 18px -20px;
             font-size: 48px;
             line-height: 48px;
+            font-weight: bold;
             color: @color-scheme-main;
             //text-shadow: 0 1px 2px rgba(0,0,0,0.50);
 
@@ -171,7 +172,7 @@ body
             @media @mediaQueryResponsivePhonesOnly
             {
                 font-size: 34px;
-                margin-left: 0; margin-right: 15px;
+                margin-left: 0; margin-right: 4px;
             }
 
             @media @mediaQueryNavBarCollapsed
@@ -448,29 +449,49 @@ body
 
 #labMembersPictureSection
 {
-    position: relative;
+    .boxExtended;
+
     background-color: @color-scheme-accent-cool;
     box-sizing:border-box;
-    height:327px;
 
     background-image: url(http://www.unco.edu/biology/lbenedict/DSCN2974.JPG);
     background-position: top center;
     background-repeat:no-repeat;
-
-    img
-    {
-        position:absolute;
-        top:0;
-    }
+    background-size:cover;
 
     .heading
     {
-        position:absolute;
-        bottom:50px;
-        left:100px;
-        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 0;
         color: @color-scheme-white;
-        text-shadow: 0 3px 8px rgba(0,0,0,0.95);
+        text-shadow: 0 3px 12px rgba(0,0,0,1.0);
+    }
+
+    @media @mediaQueryResponsiveLargeDesktopAndUp
+    {
+        height:450px;
+    }
+
+    @media @mediaQueryResponsiveNormalDesktop
+    {
+        height:400px;
+    }
+
+    @media @mediaQueryResponsiveLandscapeTabletAndSmallDesktop
+    {
+        height:350px;
+    }
+
+    @media @mediaQueryResponsivePhonesOnly
+    {
+        height: 200px;
+
+        .heading
+        {
+            margin-top: 150px;
+            overflow: hidden;
+            text-overflow:clip;
+        }
     }
 }
 
@@ -489,7 +510,6 @@ body
     margin-bottom: 35px;
     border: 1px solid @color-scheme-accent-cool;
     background-color: @color-scheme-white;
-    box-shadow: rgba(0,0,0,0.33) 2px 2px 12px;
 
     &:last-of-type
     {

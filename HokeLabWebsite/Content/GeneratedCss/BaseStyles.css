@@ -49,6 +49,7 @@ body {
   margin: 18px 80px 18px -20px;
   font-size: 48px;
   line-height: 48px;
+  font-weight: bold;
   color: #51bb23;
 }
 #mainHeader .navbar .brand:hover {
@@ -77,7 +78,7 @@ body {
   #mainHeader .navbar .brand {
     font-size: 34px;
     margin-left: 0;
-    margin-right: 15px;
+    margin-right: 4px;
   }
 }
 @media (max-width: 649px) {
@@ -337,25 +338,51 @@ body {
   }
 }
 #labMembersPictureSection {
-  position: relative;
   background-color: #8ecbff;
   box-sizing: border-box;
-  height: 327px;
   background-image: url(http://www.unco.edu/biology/lbenedict/DSCN2974.JPG);
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
-#labMembersPictureSection img {
-  position: absolute;
-  top: 0;
+@media (max-width: 767px) {
+  #labMembersPictureSection {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 #labMembersPictureSection .heading {
-  position: absolute;
-  bottom: 50px;
-  left: 100px;
-  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 0;
   color: white;
-  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.95);
+  text-shadow: 0 3px 12px black;
+}
+@media (min-width: 1200px) {
+  #labMembersPictureSection {
+    height: 450px;
+  }
+}
+@media (min-width: 980px) and (max-width: 1199px) {
+  #labMembersPictureSection {
+    height: 400px;
+  }
+}
+@media (min-width: 768px) and (max-width: 979px) {
+  #labMembersPictureSection {
+    height: 350px;
+  }
+}
+@media (max-width: 767px) {
+  #labMembersPictureSection {
+    height: 200px;
+  }
+  #labMembersPictureSection .heading {
+    margin-top: 150px;
+    overflow: hidden;
+    text-overflow: clip;
+  }
 }
 #labMemberBioList {
   background-color: white;
@@ -413,7 +440,6 @@ body {
   margin-bottom: 35px;
   border: 1px solid #8ecbff;
   background-color: white;
-  box-shadow: rgba(0, 0, 0, 0.33) 2px 2px 12px;
 }
 .labMemberBioBoxSection:last-of-type {
   margin-bottom: 0;
